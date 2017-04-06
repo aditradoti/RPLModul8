@@ -26,11 +26,13 @@ public class Rpl {
         {
             System.out.println("Bilangan Fibonacci: " + methodFibonacci(ii));
         }
+        
     }
     
     public static int methodFibonacci(int fibonacciInput)
     {   
         int x;
+        int jumlah = 0;
         int n = fibonacciInput;
         if(n <=0 || n<=1)
         {
@@ -40,7 +42,9 @@ public class Rpl {
         else
         {
             return methodFibonacci(n-2) + methodFibonacci(n-1) ;
+            jumlah += methodFibonacci();
         }
+        
     }
     
 }
